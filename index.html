@@ -80,9 +80,19 @@
     </nav>
 
     <!-- Sections -->
-    <section id="ai" class="bg-color text-white" data-aos="fade-up">
-      <!-- ...il resto del tuo codice... -->
-    </section>
+<section id="ai" class="bg-color text-white" data-aos="fade-up">
+  <h2>Intelligenza Artificiale</h2>
+  <div id="typed-strings">
+    <p>Machine Learning</p>
+    <p>Deep Learning</p>
+    <p>Riconoscimento delle immagini</p>
+    <p>Elaborazione del linguaggio naturale</p>
+    <p>Analisi dei dati</p>
+  </div>
+  <span id="typed"></span>
+  <!-- ...il resto del tuo codice... -->
+</section>
+
 
     <section id="slides" class="bg-color text-white" data-aos="fade-up">
       <h2>Slides</h2>
@@ -144,5 +154,17 @@
         duration: 1000,
       });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2"></script>
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+    
   </body>
 </html>

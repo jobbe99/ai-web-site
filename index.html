@@ -53,6 +53,11 @@
       #conclusioni {
         background-image: url('link-alla-tua-immagine-5.jpg');
       }
+
+  .typed-text {
+    font-size: 1.5em;
+    color: white;
+  }      
     </style>
 
   </head>
@@ -88,14 +93,10 @@
     </nav>
 
     <!-- Sections -->
-    <section id="titolo" class="bg-color text-white" data-aos="fade-up">
-      <h1>Titolo del sito</h1>
-      <div class="content row">
-        <div class="col-md-6">Lorem ipsum...</div>
-        <div class="col-md-6">Lorem ipsum...</div>
-      </div>
-      <button class="btn btn-light mt-3">Click Me</button>
-    </section>
+<section id="titolo" class="bg-color text-white" data-aos="fade-up">
+  <div class="typed-text"></div>
+  <!-- ...il resto del tuo codice... -->
+</section>
 
     <section id="video" class="bg-color text-white" data-aos="fade-up">
       <h2>Video</h2>
@@ -153,5 +154,20 @@
         duration: 1000,
       });
     </script>
+
+
+    <!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js@2.0.11/lib/typed.min.js"></script>
+
+<script>
+  new Typed('.typed-text', {
+    strings: ["Intelligenza Artificiale", "Machine Learning", "Deep Learning", "Reti Neurali", "Algoritmi Genetici"],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true,
+  });
+</script>
+
+    
   </body>
 </html>

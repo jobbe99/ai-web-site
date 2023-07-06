@@ -17,28 +17,31 @@
     <style>
       body {
         scroll-behavior: smooth;
+        background-color: #333;
       }
 
       .bg-color {
-        min-height: 100vh;
+        min-height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        background-color: #444;
       }
 
       .content {
         margin-top: 1em;
       }
 
-      .video-container {
+      .iframe-container {
         position: relative;
-        width: 100%;
+        width: 90%;
         padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        margin: auto;
       }
 
-      .video-container iframe {
+      .iframe-container iframe {
         position: absolute;
         top: 0;
         left: 0;
@@ -52,95 +55,42 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="https://jobbe99.github.io/ai-web-site/">Intelligenza Artificiale</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#ai">AI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#slides">Slides</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#video">Video</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#libro">Libro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#strumenti">Strumenti</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <!-- ...il resto del tuo codice... -->
     </nav>
 
     <!-- Sections -->
 <section id="ai" class="bg-color text-white" data-aos="fade-up">
   <h2>Intelligenza Artificiale</h2>
-  <div id="typed-strings">
-    <p>Machine Learning</p>
-    <p>Deep Learning</p>
-    <p>Riconoscimento delle immagini</p>
-    <p>Elaborazione del linguaggio naturale</p>
-    <p>Analisi dei dati</p>
-  </div>
-  <span id="typed"></span>
   <!-- ...il resto del tuo codice... -->
 </section>
 
-
     <section id="slides" class="bg-color text-white" data-aos="fade-up">
       <h2>Slides</h2>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTyIc6suQYgLAR8DyeuJpHkdcfrlbJOSmMc3KN2GYyq0J3OHKyTTu0jcB4dV7F4_ask7XtrUhLViWO3/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1920" height="1183" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>      
-      <div class="content row">
-        <div class="col-md-6">Lorem ipsum...</div>
-        <div class="col-md-6">Lorem ipsum...</div>
+      <div class="iframe-container">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTyIc6suQYgLAR8DyeuJpHkdcfrlbJOSmMc3KN2GYyq0J3OHKyTTu0jcB4dV7F4_ask7XtrUhLViWO3/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       </div>
-      <button class="btn btn-light mt-3">Click Me</button>
+      <!-- ...il resto del tuo codice... -->
     </section>
 
     <section id="video" class="bg-color text-white" data-aos="fade-up">
       <h2>Video</h2>
-      <div class="video-container">
+      <div class="iframe-container">
         <iframe src="https://www.youtube.com/embed/r3IgQ42pxh8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="content row">
-        <div class="col-md-6">Lorem ipsum...</div>
-        <div class="col-md-6">Lorem ipsum...</div>
-      </div>
-      <button class="btn btn-light mt-3">Click Me</button>
+      <!-- ...il resto del tuo codice... -->
     </section>
 
     <section id="libro" class="bg-color text-white" data-aos="fade-up">
       <h2>Libro</h2>
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQqLHD652nk-7iSe9DZeX9GoiOp3Ex9NXrFmT_W4JOMwjWTp643ITWfFlqtHF0PCQrxl-iTwM1C6_eI/pub?embedded=true"></iframe>
-      <div class="content row">
-        <div class="col-md-6">Lorem ipsum...</div>
-        <div class="col-md-6">Lorem ipsum...</div>
+      <div class="iframe-container">
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQqLHD652nk-7iSe9DZeX9GoiOp3Ex9NXrFmT_W4JOMwjWTp643ITWfFlqtHF0PCQrxl-iTwM1C6_eI/pub?embedded=true"></iframe>
       </div>
-      <button class="btn btn-light mt-3">Click Me</button>
+      <!-- ...il resto del tuo codice... -->
     </section>
 
 <section id="strumenti" class="bg-color text-white" data-aos="fade-up">
-  <h2>Strumenti</h2>
-  <div class="content row">
-    <div class="col-md-12">
-      <ul class="list-unstyled">
-        <li><a href="https://tome.app" target="_blank" class="text-white">Tome.app</a></li>
-        <li><a href="https://d-id.com" target="_blank" class="text-white">D-id.com</a></li>
-        <li><a href="https://openai.com" target="_blank" class="text-white">OpenAI.com</a></li>
-        <li><a href="https://developers.google.com/apps-script" target="_blank" class="text-white">Google Script</a></li>
-      </ul>
-    </div>
-  </div>
-  <button class="btn btn-light mt-3">Torna in alto</button>
+  <!-- ...il resto del tuo codice... -->
 </section>
-
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -154,20 +104,5 @@
         duration: 1000,
       });
     </script>
-
-<script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js@2.0.11/lib/typed.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var typed = new Typed('#typed', {
-      strings: ["Intelligenza Artificiale", "Machine Learning", "Deep Learning", "Reti Neurali", "NLP", "Computer Vision"],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
-    });
-  });
-</script>
-
-
-    
   </body>
 </html>

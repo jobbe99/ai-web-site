@@ -26,76 +26,25 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-size: cover;
-        background-position: center;
       }
 
       .content {
         margin-top: 1em;
       }
 
-      #ai {
-        background-image: url('link-alla-tua-immagine-1.png');
+      .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
       }
 
-      #slides {
-        background-image: url('link-alla-tua-immagine-2.png');
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
-
-      #video {
-        background-image: url('link-alla-tua-immagine-3.png');
-      }
-
-      #libro {
-        background-image: url('link-alla-tua-immagine-4.png');
-      }
-
-      #strumenti {
-        background-image: url('https://jobbe99.github.io/ai-web-site/link-alla-tua-immagine-5.png');
-      }
-
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-      .bg-color {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.bg-color::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5); /* Cambia il valore di 0.5 per regolare la trasparenza */
-  z-index: 1;
-}
-
-.content {
-  position: relative;
-  z-index: 2;
-  margin-top: 1em;
-}
-
     </style>
 
   </head>
@@ -132,7 +81,6 @@
 
     <!-- Sections -->
     <section id="ai" class="bg-color text-white" data-aos="fade-up">
-      <div class="typed-text"></div>
       <!-- ...il resto del tuo codice... -->
     </section>
 
@@ -148,16 +96,9 @@
 
     <section id="video" class="bg-color text-white" data-aos="fade-up">
       <h2>Video</h2>
-<!-- Contenitore responsive per l'iframe -->
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/r3IgQ42pxh8" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-  </iframe>
-</div>
-
-
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/r3IgQ42pxh8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <div class="content row">
         <div class="col-md-6">Lorem ipsum...</div>
         <div class="col-md-6">Lorem ipsum...</div>
@@ -196,7 +137,5 @@
         duration: 1000,
       });
     </script>
-
-    
   </body>
 </html>

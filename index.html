@@ -1,98 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intelligenza Artificiale</title>
-
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="style1.css" rel="stylesheet">
-  </head>
-  <body>
-
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="https://jobbe99.github.io/ai-web-site/">Intelligenza Artificiale</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="#ai">AI</a>
+                <a class="nav-link" href="#ai">AI</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#slides">Slides</a>
+                <a class="nav-link" href="#slides">Slides</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#video">Video</a>
+                <a class="nav-link" href="#video">Video</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#libro">Libro</a>
+                <a class="nav-link" href="#libro">Libro</a>
             </li>
-          </ul>
-        </div>
-      </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#strumenti">Strumenti</a>
+            </li>
+        </ul>
     </nav>
 
     <!-- Sections -->
-    <section id="ai" class="bg-color text-white" data-aos="fade-up">
-      <h2>Intelligenza Artificiale</h2>
-      <span id="typed"></span>
+    <section id="ai" class="section">
+        <h2>Intelligenza Artificiale</h2>
+        <div class="content">
+            <!-- Contenuto della sezione AI -->
+        </div>
     </section>
 
-    <section id="slides" class="bg-color text-white" data-aos="fade-up">
-      <h2>Slides</h2>
-      <div class="iframe-container">
+    <section id="slides" class="section">
+        <h2>Slides</h2>
+        <div class="content">
         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTyIc6suQYgLAR8DyeuJpHkdcfrlbJOSmMc3KN2GYyq0J3OHKyTTu0jcB4dV7F4_ask7XtrUhLViWO3/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
+        </div>
     </section>
 
-    <section id="video" class="bg-color text-white" data-aos="fade-up">
-      <h2>Video</h2>
-      <div class="iframe-container">
+    <section id="video" class="section">
+        <h2>Video</h2>
+        <div class="content">
         <iframe src="https://www.youtube.com/embed/r3IgQ42pxh8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+
+        </div>
     </section>
 
-    <section id="libro" class="bg-color text-white" data-aos="fade-up">
-      <h2>Libro</h2>
-      <div class="iframe-container">
+    <section id="libro" class="section">
+        <h2>Libro</h2>
+        <div class="content">
         <iframe src="https://docs.google.com/document/d/e/2PACX-1vQqLHD652nk-7iSe9DZeX9GoiOp3Ex9NXrFmT_W4JOMwjWTp643ITWfFlqtHF0PCQrxl-iTwM1C6_eI/pub?embedded=true" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
+
+        </div>
     </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <section id="strumenti" class="section">
+        <h2>Strumenti</h2>
+        <div class="content">
+            testo strumenti
+        </div>
+    </section>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-
-    <!-- Typed.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var typed = new Typed('#typed', {
-          strings: ["Intelligenza Artificiale", "Machine Learning", "Deep Learning", "Reti Neurali", "NLP", "Computer Vision"],
-          typeSpeed: 50,
-          backSpeed: 30,
-          loop: true
-        });
-      });
-    </script>
-    
-    
-  </body>
+</body>
 </html>
